@@ -33,3 +33,9 @@
 {"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-23 14:43:08"}
 {"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-23 14:43:26"}
 {"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-23 14:43:26"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-25 19:27:46"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-25 19:27:46"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-25 19:29:22"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-25 19:29:22"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-25 19:29:37"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-25 19:29:37"}
