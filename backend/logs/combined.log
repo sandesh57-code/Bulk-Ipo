@@ -113,3 +113,67 @@
 {"level":"info","message":"\u001b[0mPOST /api/ipos/bulk-apply \u001b[32m200\u001b[0m 1472.639 ms - 194\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-25 19:45:50"}
 {"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-25 19:46:11"}
 {"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-25 19:46:11"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-25 21:08:19"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-25 21:08:19"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-25 21:08:19"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-25 21:08:19"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-26 20:17:12"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-26 20:17:12"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 33.618 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[32m200\u001b[0m 49.262 ms - 522\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 10.172 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 9.684 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[32m200\u001b[0m 68.896 ms - 970\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/reports?limit=5 \u001b[32m200\u001b[0m 71.276 ms - 932\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 12.326 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/reports?limit=5 \u001b[36m304\u001b[0m 15.601 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:16"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 11.442 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:25"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.063 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:25"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.024 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:31"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 3.138 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:31"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 8.613 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:31"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 5.269 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:31"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.346 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:32"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?limit=50 \u001b[32m200\u001b[0m 10.496 ms - 3980\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:32"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 7.050 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:32"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?limit=50 \u001b[36m304\u001b[0m 6.675 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:32"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.391 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:33"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 4.568 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:33"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 6.083 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:33"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 5.867 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:33"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 6.370 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:34"}
+{"level":"info","message":"\u001b[0mGET /api/reports?status=&accountId=&page=1 \u001b[32m200\u001b[0m 12.351 ms - 932\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:34"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 8.494 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:34"}
+{"level":"info","message":"\u001b[0mGET /api/reports?status=&accountId=&page=1 \u001b[36m304\u001b[0m 9.627 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:34"}
+{"level":"info","message":"\u001b[0mGET /api/notifications \u001b[32m200\u001b[0m 12.220 ms - 550\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:34"}
+{"level":"info","message":"\u001b[0mGET /api/notifications \u001b[36m304\u001b[0m 5.467 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:34"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 10.574 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 13.378 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 18.932 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 12.117 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/reports?limit=5 \u001b[36m304\u001b[0m 24.700 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 12.193 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 13.700 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/reports?limit=5 \u001b[36m304\u001b[0m 11.930 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:37"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 3.507 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:59"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 3.056 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:17:59"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.482 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:00"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 7.996 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:00"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 8.043 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:00"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 8.247 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:00"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.471 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:01"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?limit=50 \u001b[36m304\u001b[0m 6.316 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:01"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 6.749 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:01"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?limit=50 \u001b[36m304\u001b[0m 6.700 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:01"}
+{"level":"info","message":"\u001b[0mPOST /api/results/bulk-check \u001b[33m404\u001b[0m 0.557 ms - 52\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:06"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.410 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:11"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 4.211 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:11"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 5.678 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:11"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 5.329 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:11"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 4.183 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:14"}
+{"level":"info","message":"\u001b[0mGET /api/reports?status=&accountId=&page=1 \u001b[36m304\u001b[0m 10.546 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:14"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 6.389 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:14"}
+{"level":"info","message":"\u001b[0mGET /api/reports?status=&accountId=&page=1 \u001b[36m304\u001b[0m 9.074 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:14"}
+{"level":"info","message":"\u001b[0mGET /api/notifications \u001b[36m304\u001b[0m 2.899 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:19"}
+{"level":"info","message":"\u001b[0mGET /api/notifications \u001b[36m304\u001b[0m 3.552 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:19"}
+{"level":"info","message":"\u001b[0mPUT /api/notifications/6a145612a3985f594e0f8c8a/read \u001b[32m200\u001b[0m 18.221 ms - 612\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:20"}
