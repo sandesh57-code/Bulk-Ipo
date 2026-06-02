@@ -177,3 +177,23 @@
 {"level":"info","message":"\u001b[0mGET /api/notifications \u001b[36m304\u001b[0m 2.899 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:19"}
 {"level":"info","message":"\u001b[0mGET /api/notifications \u001b[36m304\u001b[0m 3.552 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:19"}
 {"level":"info","message":"\u001b[0mPUT /api/notifications/6a145612a3985f594e0f8c8a/read \u001b[32m200\u001b[0m 18.221 ms - 612\u001b[0m","service":"bulkipo-api","timestamp":"2026-05-26 20:18:20"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-05-26 20:20:34"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-05-26 20:20:34"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-06-02 20:44:28"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-06-02 20:44:28"}
+{"level":"info","message":"\u001b[0mPOST /api/auth/register \u001b[33m400\u001b[0m 70.441 ms - 65\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:23"}
+{"level":"info","message":"\u001b[0mPOST /api/auth/login \u001b[33m401\u001b[0m 269.841 ms - 49\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:36"}
+{"level":"info","message":"User logged in: madan@gmail.com","service":"bulkipo-api","timestamp":"2026-06-02 20:45:43"}
+{"level":"info","message":"\u001b[0mPOST /api/auth/login \u001b[32m200\u001b[0m 300.308 ms - 388\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:43"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 25.584 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/portfolio \u001b[36m304\u001b[0m 5.077 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 45.164 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/accounts \u001b[36m304\u001b[0m 5.709 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 105.692 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/ipos?status=open \u001b[36m304\u001b[0m 6.981 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/reports?limit=5 \u001b[36m304\u001b[0m 123.107 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"\u001b[0mGET /api/reports?limit=5 \u001b[36m304\u001b[0m 10.191 ms - -\u001b[0m","service":"bulkipo-api","timestamp":"2026-06-02 20:45:44"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-06-02 20:51:47"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-06-02 20:51:47"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"bulkipo-api","timestamp":"2026-06-02 20:52:07"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"bulkipo-api","timestamp":"2026-06-02 20:52:07"}

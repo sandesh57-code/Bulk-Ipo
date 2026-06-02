@@ -36,9 +36,16 @@ const ipoSchema = new mongoose.Schema({
   isActive: { type: Boolean, default: true },
   applicationsCount: { type: Number, default: 0 },
   oversubscriptionRatio: { type: Number, default: 0 },
+
+  // ── Real-data tracking fields ─────────────────────────────────────────────
+  /** Where the data was fetched from: 'CDSC' | 'ShareSansar' | 'Curated' | 'Manual' */
+  dataSource: { type: String, default: 'Manual' },
+  /** When this record was last synced from the upstream source */
+  lastSyncedAt: { type: Date },
 }, { timestamps: true });
 
 ipoSchema.index({ status: 1 });
 ipoSchema.index({ openingDate: 1, closingDate: 1 });
+ipoSchema.index({ companyCode: 1, ipoType: 1 });
 
 module.exports = mongoose.model('IPO', ipoSchema);

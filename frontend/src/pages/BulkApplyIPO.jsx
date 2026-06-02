@@ -1,17 +1,18 @@
 import { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchAccounts } from '../redux/slices/accountSlice'
-import { fetchOpenIPOs, bulkApplyIPO } from '../redux/slices/ipoSlice'
-import { FiZap, FiCheck, FiX, FiAlertCircle, FiLoader } from 'react-icons/fi'
+import { fetchOpenIPOs, bulkApplyIPO, syncIPOs, fetchSyncStatus } from '../redux/slices/ipoSlice'
+import { FiZap, FiCheck, FiX, FiAlertCircle, FiLoader, FiRefreshCw } from 'react-icons/fi'
 import { motion, AnimatePresence } from 'framer-motion'
 import toast from 'react-hot-toast'
+import { formatDistanceToNow } from 'date-fns'
 
 export default function BulkApplyIPO() {
   const dispatch = useDispatch()
   
   const { theme } = useSelector(state => state.auth)
   const { accounts } = useSelector(state => state.accounts)
-  const { openIPOs, applying, loading: ipoLoading } = useSelector(state => state.ipo)
+  const { openIPOs, applying, loading: ipoLoading, syncing, syncStatus } = useSelector(state => state.ipo)
   const isDark = theme === 'dark'
 
   const [selectedIpoId, setSelectedIpoId] = useState('')
@@ -25,6 +26,7 @@ export default function BulkApplyIPO() {
   useEffect(() => {
     dispatch(fetchAccounts())
     dispatch(fetchOpenIPOs())
+    dispatch(fetchSyncStatus())
   }, [dispatch])
 
   useEffect(() => {
@@ -114,6 +116,17 @@ export default function BulkApplyIPO() {
     }
   }
 
+  const handleSync = async () => {
+    try {
+      const response = await dispatch(syncIPOs()).unwrap()
+      toast.success(response.message || 'Sync completed successfully!')
+      dispatch(fetchOpenIPOs())
+      dispatch(fetchSyncStatus())
+    } catch (err) {
+      toast.error(err || 'Sync failed')
+    }
+  }
+
   const formatPrice = (val) => {
     return new Intl.NumberFormat('en-NP', { style: 'currency', currency: 'NPR', maximumFractionDigits: 0 }).format(val)
   }
@@ -121,12 +134,32 @@ export default function BulkApplyIPO() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <h1 className="text-2xl md:text-3xl font-black">Bulk Apply IPO</h1>
-        <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>Apply for shares across multiple Demat accounts instantly</p>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h1 className="text-2xl md:text-3xl font-black">Bulk Apply IPO</h1>
+          <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-500'}`}>Apply for shares across multiple Demat accounts instantly</p>
+        </div>
+        <div className="flex items-center gap-3">
+          {syncStatus?.lastSync?.at && (
+            <div className="text-right hidden md:block">
+              <p className="text-[10px] uppercase font-bold text-gray-500">Last Live Sync</p>
+              <p className="text-xs font-semibold text-gray-400">
+                {formatDistanceToNow(new Date(syncStatus.lastSync.at), { addSuffix: true })} ({syncStatus.lastSync.source})
+              </p>
+            </div>
+          )}
+          <button
+            onClick={handleSync}
+            disabled={syncing}
+            className={`btn-secondary flex items-center gap-2 cursor-pointer py-2 px-4 text-xs font-semibold ${
+              syncing ? 'opacity-70 cursor-not-allowed' : ''
+            }`}
+          >
+            <FiRefreshCw className={syncing ? 'animate-spin' : ''} size={14} />
+            {syncing ? 'Syncing Live...' : 'Sync Live Data'}
+          </button>
+        </div>
       </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
         {/* Left Side: Select IPO & Configuration */}
         <div className="lg:col-span-2 space-y-6">

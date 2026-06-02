@@ -17,10 +17,38 @@ export const checkBulkResults = createAsyncThunk('ipo/checkResults', async (payl
   try { const { data } = await api.post('/results/bulk-check', payload); return data.results }
   catch (err) { return rejectWithValue(err.response?.data?.message || 'Failed to check results') }
 })
+export const syncIPOs = createAsyncThunk('ipo/sync', async (_, { rejectWithValue }) => {
+  try {
+    const { data } = await api.post('/ipos/sync')
+    return data
+  } catch (err) {
+    return rejectWithValue(err.response?.data?.message || 'Sync failed')
+  }
+})
+export const fetchSyncStatus = createAsyncThunk('ipo/fetchSyncStatus', async (_, { rejectWithValue }) => {
+  try {
+    const { data } = await api.get('/ipos/sync/status')
+    return data
+  } catch (err) {
+    return rejectWithValue(err.response?.data?.message || 'Failed to fetch sync status')
+  }
+})
 
 const ipoSlice = createSlice({
   name: 'ipo',
-  initialState: { openIPOs: [], allIPOs: [], results: [], loading: false, applying: false, error: null, selectedIPO: null, applyProgress: [], totalPages: 1 },
+  initialState: {
+    openIPOs: [],
+    allIPOs: [],
+    results: [],
+    syncStatus: null,
+    loading: false,
+    applying: false,
+    syncing: false,
+    error: null,
+    selectedIPO: null,
+    applyProgress: [],
+    totalPages: 1
+  },
   reducers: {
     setSelectedIPO: (s, a) => { s.selectedIPO = a.payload },
     clearApplyProgress: (s) => { s.applyProgress = [] },
@@ -40,6 +68,10 @@ const ipoSlice = createSlice({
       .addCase(bulkApplyIPO.fulfilled, (s, a) => { s.applying = false; s.applyProgress = a.payload.results || [] })
       .addCase(bulkApplyIPO.rejected, (s, a) => { s.applying = false; s.error = a.payload })
       .addCase(checkBulkResults.fulfilled, (s, a) => { s.results = a.payload })
+      .addCase(syncIPOs.pending, (s) => { s.syncing = true })
+      .addCase(syncIPOs.fulfilled, (s) => { s.syncing = false })
+      .addCase(syncIPOs.rejected, (s, a) => { s.syncing = false; s.error = a.payload })
+      .addCase(fetchSyncStatus.fulfilled, (s, a) => { s.syncStatus = a.payload })
   },
 })
 export const { setSelectedIPO, clearApplyProgress, updateProgress } = ipoSlice.actions
