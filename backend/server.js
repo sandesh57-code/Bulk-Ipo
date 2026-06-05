@@ -56,6 +56,7 @@ app.use('/api/ipos', require('./routes/ipoRoutes'));
 app.use('/api/portfolio', require('./routes/portfolioRoutes'));
 app.use('/api/reports', require('./routes/reportRoutes'));
 app.use('/api/notifications', require('./routes/notificationRoutes'));
+app.use('/api/results', require('./routes/resultRoutes'));
 app.use('/api/admin', require('./routes/adminRoutes'));
 
 // Root endpoint for status check
